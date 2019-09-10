@@ -1,0 +1,54 @@
+Truthy	and	Falsy Things
+
+In order to use flow control successfully, it’s important to understand which kinds of values are “truthy”
+and which kinds of values are “falsy.” Sometimes, values that seem like they should evaluate one way
+actually evaluate another.
+
+Values that evaluate to true
+’0 ’;
+’any string ’;
+[]; // an empty array
+{}; // an empty object
+1; // any non - zero number
+
+Values that evaluate to false
+0;
+’ ’; // an empty string
+NaN ; // JavaScript ’s ”not -a- number ” variable
+null ;
+undefined ; // be careful -- undefined can be redefined !
+
+
+Conditional	Variable Assignment	with The Ternary Operator
+Sometimes you want to set a variable to a value depending on some condition. You could use an if/else
+statement, but in many cases the ternary operator is more convenient. [Definition: The ternary operator
+tests a condition; if the condition is true, it returns a certain value, otherwise it returns a different value.]
+
+The ternary operator
+// set foo to 1 if bar is true ;
+// otherwise , set foo to 0
+var foo = bar ? 1 : 0;
+
+While the ternary operator can be used without assigning the return value to a variable, this is generally
+discouraged.
+
+Switch	Statements
+Rather than using a series of if/else if/else blocks, sometimes it can be useful to use a switch statement
+instead. [Definition: Switch statements look at the value of a variable or expression, and run different
+blocks of code depending on the value.]
+
+A switch statement
+switch ( foo ) {
+
+   case ’bar ’:
+      alert ( ’ the value was bar -- yay ! ’);
+   break ;
+
+   case ’baz ’:
+      alert ( ’ boo baz :( ’);
+   break ;
+ 
+   default :
+      alert ( ’ everything else is just ok ’);
+   break ;
+}

@@ -1,0 +1,15 @@
+Understanding statements, variable naming, whitespace, and other basic JavaScript syntax.
+A simple variable declaration
+var foo = ’hello world ’;
+
+Whitespace has no meaning outside of quotation marks
+var foo = ’hello world ’;
+
+Parentheses indicate precedence
+2 * 3 + 5; // returns 11; multiplication happens first
+2 * (3 + 5); // returns 16; addition happens first
+
+Tabs enhance readability, but have no special meaning
+var foo = function () {
+console . log ( ’hello ’);
+};
